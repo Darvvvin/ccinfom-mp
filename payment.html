@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Darvin CSS -->
+    <link rel="stylesheet" href = "css/main.css">
+        
+    <!-- Ubuntu Font -->  
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+        
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/6313065a06.js" crossorigin="anonymous"></script>
+        
+    <title>ASLN</title>
+    </head>
+    
+    <body style = "background-image: url(images/bg_1-blur.jpg)">
+        <nav class="navbar fixed-top navbar-expand-sm navbar-dark navbar-custom">
+            <a href="asln.tv" class="navbar-brand"><img src="images/brand.png" width="200px"></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                       <a href="#" class="nav-link"> My Videos</a> 
+                    </li>
+                    <li class="nav-item">
+                       <a href="#" class="nav-link"><i class="fas fa-sign-in-alt"></i> Logout</a> 
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-fluid" style="max-width: 650px">
+        <div class="card p-3 mx-auto" style="margin-top: 150px; margin-bottom: 100px">
+            <h3 class="card-title" style="color: #1f1f1f">Video Payment</h3>
+            <img src="images/320-475.jpg" class="img-fluid mx-auto d-block mb-2" alt = "Poster">
+            <form>
+                <div class="form-group">
+                    <label for="inputCC"><i class="fas fa-credit-card"></i> Credit Card Number</label>
+                    <input type="text" class="form-control" id="inputCC" placeholder="1111-2222-3333-4444" maxlength="16">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                                            <label for="inputExpiryCC"><i class="fas fa-birthday-cake"></i> Expiry Date</label> <br>
+
+                        <select name='expireMM' id='expireMM'>
+                        <option value=''>Month</option>
+                        <option value='01'>January</option>
+                        <option value='02'>February</option>
+                        <option value='03'>March</option>
+                        <option value='04'>April</option>
+                        <option value='05'>May</option>
+                        <option value='06'>June</option>
+                        <option value='07'>July</option>
+                        <option value='08'>August</option>
+                        <option value='09'>September</option>
+                        <option value='10'>October</option>
+                        <option value='11'>November</option>
+                        <option value='12'>December</option>
+                    </select>
+                    <select name='expireYY' id='expireYY'>
+                        <option value=''>Year</option>
+                        <option value='19'>2019</option>
+                        <option value='20'>2020</option>
+                        <option value='21'>2021</option>
+                        <option value='22'>2022</option>
+                        <option value='23'>2023</option>
+                    </select> 
+                    <input class="inputCard" type="hidden" name="expiry" id="expiry" maxlength="4"/>
+                </div>
+                    <div class="form-group col-md-8">
+                      <label for="inputCCV"><i class="fas fa-shield-alt"></i> CCV</label>
+                      <input type="password" class="form-control" id="inputCCV" placeholder="e.g. 343" maxlength="3">
+                    </div>
+                </div>
+                <hr> <p class="card-text" style="color: #1f1f1f; font-weight: bold">Total Bill: 3.99$</p>
+              <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                      I have read the <a href="#" style="color: dodgerblue">terms and conditions.</a>
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Confirm Payment</button>
+            </form>
+        </div>
+        </div>
+    <!-- Footer -->
+        <div class="text-dark text-center fixed-bottom" style="background-color: #141414;opacity: 95%;">
+			<ul class="list-inline justify-content-center mt-2">
+				<li class="list-inline-item">
+					<a class="text-white" href="https://www.facebook.com/Airutopia-ADC-289039429234/"><i class="fab fa-facebook-f" aria-hidden="true"></i> Facebook</a>
+				</li>
+				<li class="list-inline-item">
+					<a class="text-white" href="https://twitter.com/AirSpaceLife"><i class="fab fa-twitter" aria-hidden="true"></i> Twitter</a>
+				</li>
+				<li class="list-inline-item">
+					<a class="text-white" href="https://www.youtube.com/user/airutopia"><i class="fab fa-youtube" aria-hidden="true"></i> Youtube</a>
+				</li>
+				<li class="list-inline-item">
+					<a class="text-white" href="#"><i class="fab fa-instagram" aria-hidden="true"></i> Instagram</a>
+				</li>
+			</ul>
+		</div>
+        
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
