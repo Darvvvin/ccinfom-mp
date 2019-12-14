@@ -6,11 +6,11 @@
 	$host = "localhost";
 	$dbusername = "root";
 	$dbpassword = "12345678";
-	$dbname = "module_4";
+	$dbname = "feed";
 
 	$conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
 
-	$sql = "SELECT * FROM ngo_login WHERE personnelid =?;";
+	$sql = "SELECT * FROM loginngo WHERE personnelid =?;";
 	$stmt = mysqli_stmt_init($conn);
 
 	if(!mysqli_stmt_prepare($stmt, $sql)) {

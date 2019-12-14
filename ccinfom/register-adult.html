@@ -56,44 +56,70 @@
                 </ul>
             </div>
         </nav>
-        <div class="card p-3 mx-auto" style="width: 30rem; margin-top: 150px; margin-bottom: 100px">
-            <h3 class="card-title" style="color: #1f1f1f">Register <b>NGO</b></h3>
+        <div class="card p-3 mx-auto" style="width: 35rem; margin-top: 150px; margin-bottom: 100px">
+            <h3 class="card-title" style="color: #1f1f1f">Register <b>Health Seeker</b></h3>
             <form method="post" action="connectregister.php">
                 <div class="form-row">
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-5">
                       <label for="inputFirstName">First Name</label>
                       <input type="text" class="form-control" name="firstname" placeholder="Justin">
                     </div>
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-5">
                       <label for="inputLastName">Last Name</label>
                       <input type="text" class="form-control" name="lastname" placeholder="Dela Cruz">
                     </div>
+                    <div class="form-group col-md-2">
+                      <label for="inputLastName">Middle</label>
+                      <input type="text" class="form-control" name="middle" placeholder="T" maxlength="1">
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label for="inputPassword">Personnel ID</label>
-                    <input type="text" class="form-control" name="personnelid" placeholder="e.g. 99481024">
+                    <label for="inputPassword">HS ID</label>
+                    <input type="text" class="form-control" name="hsID" placeholder="e.g. justingalura">
                 </div>
                 <div class="form-group">
-                    <label for="inputPassword">Password</label>
-                    <input type="password" class="form-control" name="password">
+                    <label for="inputPassword">Barangay ID</label>
+                    <input type="password" class="form-control" name="brgyID">
                 </div>
                 <div class="form-group">
-                    <label for="confirmPassword">Address</label>
+                    <label for="confirmPassword">Family Contact</label>
+                    <input type="text" class="form-control" name="familynum" placeholder="e.g. 847-0001">
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail">Birthday</label>
+                    <input type="date" class="form-control" name="birthday" placeholder="e.g. 09176565612">
+                </div>
+                <div class="form-group">
+				  <label for="sel1">Gender</label>
+				  <select class="form-control" id="sel1" name="gender">
+				    <option>Male</option>
+				    <option>Female</option>
+				    <option>Helicopter</option>
+				  </select>
+				</div>
+                <div class="form-group">
+                    <label for="inputEmail">Address</label>
                     <input type="text" class="form-control" name="address" placeholder="e.g. A101 Arthaland Dormitories DLSU">
                 </div>
                 <div class="form-group">
-                    <label for="inputEmail">Mobile Number</label>
+                    <label for="inputEmail">Contact</label>
                     <input type="text" class="form-control" name="mobilenumber" placeholder="e.g. 09176565612">
                 </div>
-              <div class="form-group">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="gridCheck">
-                  <label class="form-check-label" for="gridCheck">
-                      I have read the <a href="#" style="color: dodgerblue">terms and conditions.</a>
-                  </label>
+                <div class="form-group">
+				  <label for="sel1">HS Status</label>
+				  <select class="form-control" id="sel1" name="hsStatus">
+				    <option>Stable</option>
+				    <option>Stagnant</option>
+				    <option>Critical</option>
+				  </select>
+				</div>
+                <div class="form-group">
+                    <label for="inputEmail">BRGY Status</label>
+                    <input type="text" class="form-control" name="brgyStatus" placeholder="e.g. 09176565612">
                 </div>
+              <div class="form-group">
               </div>
-              <button type="submit" class="btn btn-primary">Register</button>
+              <button type="submit" class="btn btn-primary">Register HEALTH SEEKER</button>
             </form>
         </div>
         

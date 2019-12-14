@@ -8,6 +8,14 @@ $password = filter_input(INPUT_POST, 'password');
 $address = filter_input(INPUT_POST, 'address');
 $mobilenumber = filter_input(INPUT_POST, 'mobilenumber');
 
+$hsID = filter_input(INPUT_POST, 'hsID');
+$brgyID = filter_input(INPUT_POST, 'brgyID');
+$familynum = filter_input(INPUT_POST, 'familynum');
+$birthday = filter_input(INPUT_POST, 'birthday');
+$gender = filter_input(INPUT_POST, 'gender');
+$hsStatus = filter_input(INPUT_POST, 'hsStatus');
+$brgyStatus = filter_input(INPUT_POST, 'brgyStatus');
+
 $host = "localhost";
 $dbusername = "root";
 $dbpassword = "12345678";
@@ -22,7 +30,7 @@ if(mysqli_connect_error()) {
 	echo "Connect Success! <br>";
 
 	$sql = "INSERT INTO registerngo
-	VALUES ('$personnelid', '$firstname', '$middle', '$lastname' ,'$address', '$mobilenumber')";
+	VALUES ('$hsID', '$brgyID', '$familynum', '$firstname', '$middle', '$lastname', '$birthday', '$gender', '$address', '$mobilenumber', '$hsStatus', 'brgyStatus')";
 
 	$sql2 = "INSERT INTO loginngo
 	VALUES ('$password', '$personnelid')";
