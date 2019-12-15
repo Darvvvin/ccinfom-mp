@@ -110,116 +110,14 @@
 
   <div id="wrapper">
 
-    <!-- Sidebar -->
-    <ul class="sidebar navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Home</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="table_weights.php">
-          <i class="fas fa-fw fa-chart-area"></i>
-          <span>Weight Monitoring</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="table_feedingprograms.php">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Feeding Programs</span></a>
-      </li>
-    </ul>
-
     <div id="content-wrapper">
 
       <div class="container-fluid">
-
-        <!-- Icon Cards-->
-        <div class="row">
-          <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="card text-white bg-primary o-hidden h-100">
-              <div class="card-body">
-                <div class="card-body-icon">
-                  <i class="fas fa-fw fa-heartbeat"></i>
-                </div>
-                <div class="mr-5">View All Health Records</div>
-              </div>
-              <a class="card-footer text-white clearfix small z-1" href="#">
-                <span class="float-left">View Details</span>
-                <span class="float-right">
-                  <i class="fas fa-angle-right"></i>
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="card text-white bg-success o-hidden h-100">
-              <div class="card-body">
-                <div class="card-body-icon">
-                  <i class="fas fa-fw fa-running"></i>
-                </div>
-                <div class="mr-5"><font size = "5">Stable Records</font></div>
-              </div>
-              <a class="card-footer text-white clearfix small z-1" href="#">
-                <span class="float-left">View Details</span>
-                <span class="float-right">
-                  <i class="fas fa-angle-right"></i>
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="card text-white bg-warning o-hidden h-100">
-              <div class="card-body">
-                <div class="card-body-icon">
-                  <i class="fas fa-fw fa-walking"></i>
-                </div>
-                  <div class="mr-5"><font size = "5">Stagnant Records</font></div>
-              </div>
-              <a class="card-footer text-white clearfix small z-1" href="#">
-                <span class="float-left">View Details</span>
-                <span class="float-right">
-                  <i class="fas fa-angle-right"></i>
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="card text-white bg-danger o-hidden h-100">
-              <div class="card-body">
-                <div class="card-body-icon">
-                  <i class="fas fa-fw fa-wheelchair"></i>
-                </div>
-                <div class="mr-5"><font size = "5">Critical Records</font></div>
-              </div>
-              <a class="card-footer text-white clearfix small z-1" href="#">
-                <span class="float-left">View Details</span>
-                <span class="float-right">
-                  <i class="fas fa-angle-right"></i>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-          
-          
-
-        <!-- Area Chart Example-->
-        <div class="card mb-3">
-          <div class="card-header">
-            <i class="fas fa-chart-area"></i>
-            Average Weight Increase</div>
-          <div class="card-body">
-            <canvas id="myAreaChart" width="100%" height="30"></canvas>
-          </div>
-          <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
-        </div>
-          
         <!-- DataTables Example -->
         <div class="card mb-3">
           <div class="card-header">
             <i class="fas fa-table"></i>
-            Children Group Progress</div>
+            Your Information</div>
           <div class="card-body">
             <div class="table-responsive">
               <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -264,7 +162,46 @@
           </div>
           <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
         </div>
-
+        <div class="card p-3 mx-auto" style="width: 100%; margin-bottom: 100px">
+            <h3 class="card-title" style="color: #1f1f1f">Update <b>Information</b> for (put firstname here @justin)</h3>
+            <form method="post" action="connectregisterhs.php"> <!-- JUSTIN DO SOMETHING HERE (I LOVE NIGGERS) !-->
+                <div class="form-group">
+                    <label for="confirmPassword">Family Contact</label>
+                    <input type="text" class="form-control" name="familynum" placeholder="e.g. 847-0001">
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail">Birthday</label>
+                    <input type="date" class="form-control" name="birthday" placeholder="e.g. 09176565612">
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail">Password</label>
+                    <input type="password" class="form-control" name="password">
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail">Confirm Password</label>
+                    <input type="password" class="form-control" name="confirmpassword">
+                </div>
+                <div class="form-group">
+				  <label for="sel1">Gender</label>
+				  <select class="form-control" id="sel1" name="gender">
+				    <option>Male</option>
+				    <option>Female</option>
+				    <option>Helicopter</option>
+				  </select>
+				</div>
+                <div class="form-group">
+                    <label for="inputEmail">Address</label>
+                    <input type="text" class="form-control" name="address" placeholder="e.g. A101 Arthaland Dormitories DLSU">
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail">Contact</label>
+                    <input type="text" class="form-control" name="mobilenumber" placeholder="e.g. 09176565612">
+                </div>
+              <div class="form-group">
+              </div>
+              <button type="submit" class="btn btn-primary">Update Information</button>
+            </form>
+        </div>
       </div>
       <!-- /.container-fluid -->
 
