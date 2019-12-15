@@ -8,13 +8,8 @@ $password = filter_input(INPUT_POST, 'password');
 $address = filter_input(INPUT_POST, 'address');
 $mobilenumber = filter_input(INPUT_POST, 'mobilenumber');
 
-$hsID = filter_input(INPUT_POST, 'hsID');
-$brgyID = filter_input(INPUT_POST, 'brgyID');
-$familynum = filter_input(INPUT_POST, 'familynum');
-$birthday = filter_input(INPUT_POST, 'birthday');
-$gender = filter_input(INPUT_POST, 'gender');
-$hsStatus = filter_input(INPUT_POST, 'hsStatus');
-$brgyStatus = filter_input(INPUT_POST, 'brgyStatus');
+$personnelType = filter_input(INPUT_POST, 'personnelType');
+$hireDate = filter_input(INPUT_POST, 'hireDate');
 
 $host = "localhost";
 $dbusername = "root";
@@ -29,11 +24,11 @@ if(mysqli_connect_error()) {
 } else {
 	echo "Connect Success! <br>";
 
-	$sql = "INSERT INTO hsadult
-	VALUES ('$hsID', '$brgyID', '$familynum', '$firstname', '$middle', '$lastname', '$birthday', '$gender', '$address', '$mobilenumber', '$hsStatus', '$brgyStatus')";
+	$sql = "INSERT INTO bhw
+	VALUES ('$personnelType', '$personnelid', '$firstname', '$middle', '$lastname', '$address', '$hireDate', '$mobilenumber')";
 
-	$sql2 = "INSERT INTO loginhs
-	VALUES ('$hsID', '$password')";
+	$sql2 = "INSERT INTO loginbhw
+	VALUES ('$personnelid', '$password')";
 
 	if($conn->query($sql)) {
 		echo "New record is inserted sucessfully";
