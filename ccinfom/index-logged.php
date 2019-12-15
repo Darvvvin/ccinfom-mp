@@ -1,3 +1,7 @@
+<?php
+  session_start();
+?>
+
 <!doctype html>
 <html lang="en">
     <head>
@@ -28,10 +32,8 @@
             <div class="collapse navbar-collapse" id="navbarMenu">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="table_hsadult.php">
-                        <button type="button" class="btn btn-primary mr-3"><i class="fas fa-plus-square"></i> View Health Records</button>
-                        </a>
-                        <button type="button" class="btn btn-secondary"><i class="fas fa-sign-out-alt"></i> Log Out</button>
+                        <a href="tables.html">
+                        <button type="button" class="btn btn-primary"><i class="fas fa-plus-square"></i> View Health Records</button>
                         </a>
                     </li>
                 </ul>
@@ -52,7 +54,7 @@
                 </div>
                 <div class="mr-5">View All Records</div>
               </div>
-              <a class="card-footer text-white clearfix small z-1" href="table_hsadult.php">
+              <a class="card-footer text-white clearfix small z-1" href="table.html">
                 <span class="float-left">View Details</span>
                 <span class="float-right">
                   <i class="fas fa-angle-right"></i>

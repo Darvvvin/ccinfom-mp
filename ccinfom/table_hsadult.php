@@ -52,10 +52,7 @@
 
   <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-    <a class="navbar-brand mr-1" href="index.html">F.E.E.D. Dashboard</a>
-
-    <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
-      <i class="fas fa-bars"></i>
+    <a class="navbar-brand mr-1" href="index.html">FEED Health Viewer</a>
     </button>
 
     <!-- Navbar Search -->
@@ -118,13 +115,8 @@
       <li class="nav-item active">
         <a class="nav-link" href="index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span>
+          <span>Home</span>
         </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="charts.html">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>Generate Report</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="table_weights.php">
@@ -132,23 +124,15 @@
           <span>Weight Monitoring</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="table_feedingprograms.php">
           <i class="fas fa-fw fa-table"></i>
-          <span>Health Records</span></a>
+          <span>Feeding Programs</span></a>
       </li>
     </ul>
 
     <div id="content-wrapper">
 
       <div class="container-fluid">
-
-        <!-- Breadcrumbs-->
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="#">Dashboard</a>
-          </li>
-          <li class="breadcrumb-item active">Overview</li>
-        </ol>
 
         <!-- Icon Cards-->
         <div class="row">
