@@ -5,7 +5,10 @@
     $databasename = "feed";
 
     $connect = mysqli_connect($hostname, $username, $password, $databasename);
-    $query = "SELECT * FROM hsadult";
+
+    session_start();
+    $specific = $_SESSION['hsID'];
+    $query = "SELECT * FROM hsadult WHERE hsID = '$specific'";
     
     $result = mysqli_query($connect, $query);
 
@@ -21,6 +24,7 @@
     $contactNum = "mobilenumber";
     $hsStatus = "hsStatus";
     $brgyStatus = "brgyStatus";
+
 ?>
 
 
@@ -139,6 +143,7 @@
                   <tbody>
                   <?php
                       while ($row = mysqli_fetch_array($result)) {
+
                           echo "<tr>";
                           echo "<th>".$row[$hsID]."</th>";
                           echo "<th>".$row[$brgyID]."</th>";
@@ -163,7 +168,7 @@
           <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
         </div>
         <div class="card p-3 mx-auto" style="width: 100%; margin-bottom: 100px">
-            <h3 class="card-title" style="color: #1f1f1f">Update <b>Information</b> for (put firstname here @justin)</h3>
+            <h3 class="card-title" style="color: #1f1f1f">Update <b>Information</b> for <?php echo $specific; ?></h3>
             <form method="post" action="connectregisterhs.php"> <!-- JUSTIN DO SOMETHING HERE (I LOVE NIGGERS) !-->
                 <div class="form-group">
                     <label for="confirmPassword">Family Contact</label>

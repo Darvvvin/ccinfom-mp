@@ -1,6 +1,6 @@
 <?php
 
-	$hsID = $_POST['personnelid'];
+	$personnelid = $_POST['personnelid'];
 	$password = $_POST['password'];
 
 	$host = "localhost";
@@ -10,7 +10,7 @@
 
 	$conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
 
-	$sql = "SELECT * FROM loginngo WHERE hsID =?;";
+	$sql = "SELECT * FROM loginbhw WHERE personnelid =?;";
 	$stmt = mysqli_stmt_init($conn);
 
 	if(!mysqli_stmt_prepare($stmt, $sql)) {
@@ -18,7 +18,7 @@
 		exit();
 
 	} else {
-		mysqli_stmt_bind_param($stmt, "s", $hsID);
+		mysqli_stmt_bind_param($stmt, "s", $personnelid);
 		mysqli_stmt_execute($stmt);
 		$result = mysqli_stmt_get_result($stmt);
 
@@ -32,9 +32,6 @@
 				
 				header("Location: ../ccinfom/index-logged-hw.html");
 				exit();
-				//echo "SUCCESS";
-				//session_start();
-				//$_SESSION['userId'] = $row['password'];
 			}
 
 		} else {

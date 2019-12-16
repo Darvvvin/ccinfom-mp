@@ -10,7 +10,7 @@
 
 	$conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
 
-	$sql = "SELECT * FROM loginngo WHERE hsID =?;";
+	$sql = "SELECT * FROM loginhs WHERE hsID =?;";
 	$stmt = mysqli_stmt_init($conn);
 
 	if(!mysqli_stmt_prepare($stmt, $sql)) {
@@ -29,8 +29,11 @@
 				echo "WRONG PASSWORD";
 				exit();
 			} else if($password == $row['password']) {
+
+				session_start();
+				$_SESSION['hsID'] = $hsID;
 				
-				header("Location: ../ccinfom/index-logged-hw.html");
+				header("Location: ../ccinfom/table_self_updatehs.php");
 				exit();
 				//echo "SUCCESS";
 				//session_start();

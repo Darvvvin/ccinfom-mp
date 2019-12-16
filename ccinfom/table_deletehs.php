@@ -189,79 +189,13 @@
           <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
         </div>
         <div class="card p-3 mx-auto" style="width: 100%; margin-bottom: 100px">
-            <h3 class="card-title" style="color: #1f1f1f">Update <b>Information</b></h3>
-            <form method="POST" action="updateHealthSeeker.php"> <!-- JUSTIN DO SOMETHING HERE (I LOVE NIGGERS) !-->
+            <h3 class="card-title" style="color: #1f1f1f">Delete <b>Information</b></h3>
+            <form method="POST" action="deleteHealthSeeker.php"> <!-- JUSTIN DO SOMETHING HERE (I LOVE NIGGERS) !-->
               <div class="form-group">
-                    <label for="inputPassword">Health Seeker ID to Update</label>
-                    <br>
-                    <a href="table_deletehs.php" style="color: dodgerblue">Click here to be redirected to the Delete zone</a>
-                    <br><br>
+                    <label for="inputPassword">Health Seeker ID to Delete</label>
                     <input type="text" class="form-control" name="hsIDToUpdate" id="hsIDToUpdate" placeholder="e.g. 1">
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-5">
-                      <label for="inputFirstName">First Name</label>
-                      <input type="text" class="form-control" name="firstname" placeholder="Justin">
-                    </div>
-                    <div class="form-group col-md-5">
-                      <label for="inputLastName">Last Name</label>
-                      <input type="text" class="form-control" name="lastname" placeholder="Dela Cruz">
-                    </div>
-                    <div class="form-group col-md-2">
-                      <label for="inputLastName">Middle</label>
-                      <input type="text" class="form-control" name="middle" placeholder="T" maxlength="1">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="inputPassword">HS ID</label>
-                    <input type="text" class="form-control" name="hsID" placeholder="e.g. justingalura">
-                </div>
-                <div class="form-group">
-                    <label for="inputPassword">Barangay ID</label>
-                    <input type="password" class="form-control" name="brgyID">
-                </div>
-                <div class="form-group">
-                    <label for="confirmPassword">Family Contact</label>
-                    <input type="text" class="form-control" name="familynum" placeholder="e.g. 847-0001">
-                </div>
-                <div class="form-group">
-                    <label for="inputEmail">Birthday</label>
-                    <input type="date" class="form-control" name="birthday" placeholder="e.g. 09176565612">
-                </div>
-                <div class="form-group">
-          <label for="sel1">Gender</label>
-          <select class="form-control" id="sel1" name="gender">
-            <option>Male</option>
-            <option>Female</option>
-            <option>Helicopter</option>
-          </select>
-        </div>
-                <div class="form-group">
-                    <label for="inputEmail">Address</label>
-                    <input type="text" class="form-control" name="address" placeholder="e.g. A101 Arthaland Dormitories DLSU">
-                </div>
-                <div class="form-group">
-                    <label for="inputEmail">Contact</label>
-                    <input type="text" class="form-control" name="mobilenumber" placeholder="e.g. 09176565612">
-                </div>
-                <div class="form-group">
-          <label for="sel1">HS Status</label>
-          <select class="form-control" id="sel1" name="hsStatus">
-            <option>Stable</option>
-            <option>Stagnant</option>
-            <option>Critical</option>
-          </select>
-        </div>
-                <div class="form-group">
-                    <label for="inputEmail">BRGY Status</label>
-                    <select class="form-control" id="sel1" name="brgyStatus">
-                    <option>Valid</option>
-                    <option>Invalid</option>
-                  </select>
-                </div>
-              <div class="form-group">
               </div>
-              <button type="submit" class="btn btn-primary" action="update">Update Information</button>
+              		<button type="submit" class="btn btn-danger" action="update">Delete Information</button>
             </form>
         </div>
       </div>

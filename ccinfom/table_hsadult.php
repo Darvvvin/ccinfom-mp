@@ -52,7 +52,7 @@
 
   <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-    <a href="index.html" class="navbar-brand"><img src="images/brand.png" width="125px"></a>
+    <a href="index-logged.html" class="navbar-brand"><img src="images/brand.png" width="125px"></a>
     </button>
 
     <!-- Navbar Search -->
